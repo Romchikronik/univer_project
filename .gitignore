@@ -1,74 +1,74 @@
-# Создано https://www.toptal.com/developers/gitignore/api/windows,linux,osx
-# Редактировать на https://www.toptal.com/developers/gitignore?templates=windows,linux,osx
+# Created by https://www.toptal.com/developers/gitignore/api/windows,linux,osx
+# Edit at https://www.toptal.com/developers/gitignore?templates=windows,linux,osx
 
-### Линукс ###
+### Linux ###
 *~
 
-# временные файлы, которые могут быть созданы, если процесс все еще имеет открытый дескриптор удаленного файла
+# temporary files which can be created if a process still has a handle open of a deleted file
 .fuse_hidden*
 
-# Настройки каталога KDE
-.директория
+# KDE directory preferences
+.directory
 
-# Папка для мусора Linux, которая может появиться на любом разделе или диске
-.Мусор-*
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
 
-# Файлы .nfs создаются, когда открытый файл удаляется, но к нему все еще обращаются
-.нфс*
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
 
-### ОС X ###
-# Общий
+### OSX ###
+# General
 .DS_Store
 .AppleDouble
 .LSOverride
 
-# Иконка должна заканчиваться двумя \r
-Икона
+# Icon must end with two \r
+Icon
 
 
-# Миниатюры
+# Thumbnails
 ._*
 
-# Файлы, которые могут появиться в корне тома
+# Files that might appear in the root of a volume
 .DocumentRevisions-V100
 .fseventsd
-.Прожектор-V100
-.Временные элементы
-.Корзины
+.Spotlight-V100
+.TemporaryItems
+.Trashes
 .VolumeIcon.icns
 .com.apple.timemachine.donotpresent
 
-# Каталоги, потенциально созданные на удаленном общем ресурсе AFP
+# Directories potentially created on remote AFP share
 .AppleDB
 .AppleDesktop
-Папка сетевой корзины
-Временные предметы
+Network Trash Folder
+Temporary Items
 .apdisk
 
-### Окна ###
-# Файлы кэша эскизов Windows
+### Windows ###
+# Windows thumbnail cache files
 Thumbs.db
-Thumbs.db: зашифровано
+Thumbs.db:encryptable
 ehthumbs.db
 ehthumbs_vista.db
 
-# Файл дампа
-*.стекдамп
+# Dump file
+*.stackdump
 
-# Конфигурационный файл папки
+# Folder config file
 [Dd]esktop.ini
 
-# Корзина, используемая в файловых ресурсах
-$РЕЦИКЛ.БИН/
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
 
-# файлы установщика Windows
-*.такси
+# Windows Installer files
+*.cab
 *.msi
 *.msix
 *.msm
-*.MSP
+*.msp
 
-# Ярлыки Windows
+# Windows shortcuts
 *.lnk
 
-# Конец https://www.toptal.com/developers/gitignore/api/windows,linux,osx
+# End of https://www.toptal.com/developers/gitignore/api/windows,linux,osx
