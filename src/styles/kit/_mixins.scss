@@ -17,35 +17,40 @@
     background-position: $x $y;
 }
 
+// I often use these mixins, But I did not use them in this project, since I tried to stick to the given structure
+
 @mixin _1199($name, $value) {
-    @media (max-width: 1199.98px){
+    @media (max-width: 1199.98px) {
         #{$name}: $value;
     }
 }
+
 @mixin _991($name, $value) {
-    @media (max-width: 991.98px){
+    @media (max-width: 991.98px) {
         #{$name}: $value;
     }
 }
+
 @mixin _767($name, $value) {
-    @media (max-width: 767.98px){
+    @media (max-width: 767.98px) {
         #{$name}: $value;
     }
 }
 
-@mixin _1199-block{
-    @media (max-width: 1199.98px){
-        @content;
-    }
-}
-@mixin _991-block{
-    @media (max-width: 991.98px){
-        @content;
-    }
-}
-@mixin _767-block{
-    @media (max-width: 767.98px){
+@mixin _1199-block {
+    @media (max-width: 1199.98px) {
         @content;
     }
 }
 
+@mixin _991-block {
+    @media (max-width: 991.98px) {
+        @content;
+    }
+}
+
+@mixin _767-block {
+    @media (max-width: 767.98px) {
+        @content;
+    }
+}
