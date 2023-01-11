@@ -1,0 +1,93 @@
+@import 'kit/mixins';
+@import 'kit/variables';
+
+.fixed-top {
+    position: fixed;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    background-color: $blue;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    %burger_btn {
+        position: relative;
+        height: 12px;
+        transform: rotate(0);
+        transition: 0.3s;
+        background: none;
+        visibility: visible;
+    }
+
+    .nav-menu {
+        display: none;
+
+        &__item {
+            @include flex;
+            margin: 0;
+            padding: 0.5rem 0;
+            width: 100%;
+            background-color: $blue;
+
+            &:hover .nav-menu__link::after,
+            &--active .nav-menu__link::after {
+                visibility: hidden;
+            }
+
+            &:not(:last-child) {
+                border-bottom: 1px solid rgba($color: $white, $alpha: 0.8);
+            }
+        }
+
+        &__burger {
+            @extend %burger_btn;
+
+            span {
+                width: 100%;
+                height: 2px;
+                background: $white;
+                border-radius: 10px;
+                position: absolute;
+                left: 0;
+                transform: rotate(0);
+                transition: 0.3s;
+
+                &:nth-child(1) {
+                    top: 0;
+                }
+
+                &:nth-child(2),
+                &:nth-child(3) {
+                    top: 6px;
+                }
+
+                &:nth-child(4) {
+                    top: 12px;
+                }
+            }
+
+            &.open {
+                span {
+
+                    &:nth-child(1),
+                    &:nth-child(4) {
+                        width: 0;
+                        left: 50%;
+                        top: 6px;
+                    }
+
+                    &:nth-child(2) {
+                        transform: rotate(45deg);
+                    }
+
+                    &:nth-child(3) {
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+    }
+}

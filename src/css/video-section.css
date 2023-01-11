@@ -1,0 +1,37 @@
+.video-section {
+  background: url("../assets/Learn-more__image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.video-section__btn {
+  background: #39C2D7;
+  width: 9.063rem;
+  height: 9.063rem;
+  border-radius: 50%;
+  border: none;
+  font-size: 4.375rem;
+  margin-bottom: 3.375rem;
+  -webkit-transition: all 0.6s linear;
+  -o-transition: all 0.6s linear;
+  transition: all 0.6s linear;
+}
+
+.video-section__btn:hover {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+  background: #fff;
+  color: #39C2D7;
+}
+
+.video-section--title {
+  margin-bottom: 3.938rem;
+}
+
+.video-section--text {
+  max-width: 21.875rem;
+}

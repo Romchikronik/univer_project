@@ -1,0 +1,19 @@
+@import 'kit/mixins';
+@import 'kit/variables';
+
+@media screen and (max-width: 480px) {
+    .text-section {
+        &--title {
+            max-width: 23.188rem;
+            margin: 0 auto 2.625rem;
+        }
+    }
+
+    .row {
+        flex-direction: column;
+
+        &__column {
+            margin-bottom: 1.5rem;
+        }
+    }
+}

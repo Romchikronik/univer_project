@@ -1,0 +1,19 @@
+@import 'kit/mixins';
+@import 'kit/variables';
+
+@media screen and (max-width: 480px) {
+    .video-section {
+        @include bg('../assets/Learn-more__image.jpg');
+
+        &__btn {
+            width: 6.25rem;
+            height: 6.25rem;
+            font-size: 3.375rem;
+            margin-bottom: 5.125rem;
+        }
+
+        &--title {
+            margin-bottom: 5.688rem;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+@import 'kit/mixins';
+@import 'kit/variables';
+
+.header {
+    padding: 2.813rem 0 16rem;
+    @include bg('../assets/header_bg.jpg');
+
+    &-content {
+        @include flex;
+        flex-direction: column;
+
+        &__img {
+            margin-bottom: 0.813rem;
+            cursor: pointer;
+            transition: 0.5s ease-in-out;
+
+            &:hover {
+                transform: scale(1.4) rotate(10deg);
+            }
+        }
+
+        &--subtitle {
+            color: rgba($color: $white, $alpha: 0.7);
+        }
+    }
+}

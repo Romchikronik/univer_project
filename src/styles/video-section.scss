@@ -1,0 +1,33 @@
+@import 'kit/mixins';
+@import 'kit/variables';
+
+.video-section {
+    @include bg('../assets/Learn-more__image.jpg');
+    padding: 5rem 0;
+    text-align: center;
+
+    &__btn {
+        background: $video-section__btn-bg;
+        width: 9.063rem;
+        height: 9.063rem;
+        border-radius: 50%;
+        border: none;
+        font-size: 4.375rem;
+        margin-bottom: 3.375rem;
+        transition: all 0.6s linear;
+
+        &:hover {
+            transform: scale(0.9);
+            background: $white;
+            color: $video-section__btn-bg;
+        }
+    }
+
+    &--title {
+        margin-bottom: 3.938rem;
+    }
+
+    &--text {
+        max-width: 21.875rem;
+    }
+}

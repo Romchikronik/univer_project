@@ -1,0 +1,60 @@
+@import 'kit/mixins';
+@import 'kit/variables';
+
+.footer {
+    padding: 2.313rem 0 4.625rem;
+    background-color: $darkgray;
+}
+
+.footer-row {
+    @include flex(flex-start, flex-start);
+    color: rgba($color: $white, $alpha: 0.4);
+    line-height: 1.188rem;
+
+    &__column {
+        flex: 1.5;
+
+        &:last-child {
+            flex: 3;
+            align-self: flex-end;
+            @include flex(flex-end, flex-end);
+        }
+    }
+
+    &__logo {
+        color: $white;
+        letter-spacing: 0.2rem;
+        font-size: 1.125rem;
+        line-height: $base-size;
+    }
+
+    &__logo-img {
+        margin-right: $base-size;
+        vertical-align: text-top;
+        animation: spin 0.1s infinite;
+
+        &:hover {
+            animation-play-state: paused;
+        }
+    }
+}
+
+.footer-contacts {
+    &__address {
+        margin-bottom: 1.688rem;
+    }
+
+    &--mail-link {
+        color: rgba($color: $white, $alpha: 0.4);
+    }
+}
+
+@keyframes spin {
+    form {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
