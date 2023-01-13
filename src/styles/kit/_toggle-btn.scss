@@ -1,0 +1,19 @@
+@media screen and (max-width: 768px) {
+    #nav-menu-toggle:checked~.nav-menu__burger>span {
+        transform: rotate(45deg);
+    }
+
+    #nav-menu-toggle:checked~.nav-menu__burger>span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+
+    #nav-menu-toggle:checked~.nav-menu__burger>span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    #nav-menu-toggle:checked~.nav-menu {
+        visibility: visible;
+    }
+}

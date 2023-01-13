@@ -17,6 +17,7 @@
         text-transform: uppercase;
         align-self: flex-start;
         transition: all 0.6s linear;
+        z-index: 4;
 
         &:hover {
             transform: translate(10px);
@@ -55,11 +56,6 @@
                 transition: transform 500ms ease;
                 visibility: hidden;
             }
-        }
-
-        &__burger {
-            visibility: hidden;
-            width: 30px;
         }
     }
 }

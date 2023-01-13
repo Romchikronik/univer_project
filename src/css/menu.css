@@ -25,6 +25,7 @@
   -webkit-transition: all 0.6s linear;
   -o-transition: all 0.6s linear;
   transition: all 0.6s linear;
+  z-index: 4;
 }
 
 .nav__logo:hover {
@@ -86,9 +87,4 @@
   transition: transform 500ms ease;
   transition: transform 500ms ease, -webkit-transform 500ms ease;
   visibility: hidden;
-}
-
-.nav-menu__burger {
-  visibility: hidden;
-  width: 30px;
 }

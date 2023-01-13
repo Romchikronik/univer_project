@@ -60,3 +60,7 @@ body {
   margin: 0 auto;
   position: relative;
 }
+
+#nav-menu-toggle {
+  display: none;
+}

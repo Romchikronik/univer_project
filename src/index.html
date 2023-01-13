@@ -7,6 +7,7 @@
     <meta name="author" content="Колесов Роман Иванович">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
     <title>PROJECT</title>
+    <link rel="icon" type="image/png" href="assets/footer-logo.png">
     <link rel="stylesheet" href="css/styles.min.css">
     <link rel="stylesheet" href="css/menu.min.css">
     <link rel="stylesheet" href="css/header.min.css">
@@ -23,6 +24,10 @@
         <nav class="nav" role="navigation" aria-label="Main">
             <div class="container nav__container">
                 <a class="nav__logo" href="index.html">Project</a>
+                <input id="nav-menu-toggle" type="checkbox" />
+                <label class="nav-menu__burger" for="nav-menu-toggle">
+                    <span></span>
+                </label>
                 <ul class="nav-menu">
                     <li class="nav-menu__item"><a class="nav-menu__link" href="">PROJECTS</a></li>
                     <li class="nav-menu__item nav-menu__item--active">
@@ -31,12 +36,6 @@
                     <li class="nav-menu__item"><a class="nav-menu__link" href="">STORIES</a></li>
                     <li class="nav-menu__item"><a class="nav-menu__link" href="">CONTACT</a></li>
                 </ul>
-                <button class="nav-menu__burger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
             </div>
         </nav>
         <div class="header-content">

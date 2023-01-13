@@ -17,7 +17,7 @@
     background-position: $x $y;
 }
 
-// I often use media queries mixins, But I did not use them in this project, since I tried to stick to the given structure
+// I often use these mixins, But I did not use them in this project, since I tried to stick to the given structure
 
 @mixin _1199($name, $value) {
     @media (max-width: 1199.98px) {

@@ -1,92 +1,62 @@
 @import 'kit/mixins';
 @import 'kit/variables';
+@import 'kit/toggle-btn';
 
-.fixed-top {
-    position: fixed;
-    top: 75px;
-    left: 0;
-    width: 100%;
-    z-index: 5;
-    background-color: $blue;
-    text-align: center;
-}
 
 @media screen and (max-width: 768px) {
 
     %burger_btn {
-        position: relative;
-        height: 12px;
-        transform: rotate(0);
-        transition: 0.3s;
-        background: none;
-        visibility: visible;
+        content: '';
+        transition: 0.2s ease;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: $white;
+        border-radius: 5px;
     }
 
     .nav-menu {
-        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        visibility: hidden;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        background-color: $blue;
+        z-index: 3;
 
         &__item {
             @include flex;
             margin: 0;
             padding: 0.5rem 0;
-            width: 100%;
-            background-color: $blue;
 
             &:hover .nav-menu__link::after,
             &--active .nav-menu__link::after {
                 visibility: hidden;
             }
-
-            &:not(:last-child) {
-                border-bottom: 1px solid rgba($color: $white, $alpha: 0.8);
-            }
         }
 
         &__burger {
-            @extend %burger_btn;
+            width: 30px;
+            z-index: 4;
+            position: relative;
 
-            span {
-                width: 100%;
-                height: 2px;
-                background: $white;
-                border-radius: 10px;
-                position: absolute;
-                left: 0;
-                transform: rotate(0);
-                transition: 0.3s;
-
-                &:nth-child(1) {
-                    top: 0;
-                }
-
-                &:nth-child(2),
-                &:nth-child(3) {
-                    top: 6px;
-                }
-
-                &:nth-child(4) {
-                    top: 12px;
-                }
+            span,
+            span::before,
+            span::after {
+                @extend %burger_btn;
+                top: 40%;
             }
 
-            &.open {
-                span {
+            span::before {
+                top: -8px;
+            }
 
-                    &:nth-child(1),
-                    &:nth-child(4) {
-                        width: 0;
-                        left: 50%;
-                        top: 6px;
-                    }
-
-                    &:nth-child(2) {
-                        transform: rotate(45deg);
-                    }
-
-                    &:nth-child(3) {
-                        transform: rotate(-45deg);
-                    }
-                }
+            span::after {
+                top: 8px;
             }
         }
     }
