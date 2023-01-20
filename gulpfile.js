@@ -12,7 +12,7 @@ var sass = require("gulp-sass");
 
 function style() {
   return gulp
-    .src("./src/styles/*.scss")
+    .src("./src/styles/styles.scss")
     .pipe(plumber())
     .pipe(sass())
     .pipe(sourcemaps.init())
@@ -35,7 +35,7 @@ function style() {
 }
 
 gulp.task("watch", function () {
-  watch("./src/styles/*.scss", style);
+  watch("./src/styles/styles.scss", style);
   watch("./src/*.html", browserSync.reload);
   watch("./src/js/script.js", browserSync.reload);
 });

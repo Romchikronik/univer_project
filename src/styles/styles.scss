@@ -66,3 +66,13 @@ body {
 #nav-menu-toggle {
     display: none;
 }
+
+@import 'menu';
+@import 'menu.mobile';
+@import 'header';
+@import 'text-section';
+@import 'text-section.mobile';
+@import 'video-section';
+@import 'video.section.mobile';
+@import 'footer';
+@import 'footer.mobile';
